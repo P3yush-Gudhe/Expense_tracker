@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API = axios.create({ baseURL: "https://expense-tracker-3fdp.onrender.com" });
+const API = axios.create({ baseURL: "expensetracker-production-fc51.up.railway.app"});
 
 API.interceptors.request.use((req) => {
   const token = localStorage.getItem('token');
